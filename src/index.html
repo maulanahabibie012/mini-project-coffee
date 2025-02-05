@@ -8,54 +8,96 @@
   <link rel="stylesheet" href="./output.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-black">
-  <nav class="bg-black">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8" id="navbar-default">
-      <ul class="flex items-center justify-between text-white p-8">
-        <li>
-          <a href="#" class="accordion-icon transition duration-150 ease-in-out flex items-center mr-4">HOME</a>
-        </li>
-        <li>
-          <a href="#" class="accordion-icon transition duration-150 ease-in-out flex items-center mr-4">KOPI</a>
-        </li>
-        <li>
-          <img class="h-[88px] w-[122px]" src="../assets/logo-name.png" class="h-8" alt="Purban Logo" />
-        </li>
-        <li>
-          <a href="#" class="accordion-icon transition duration-150 ease-in-out flex items-center mr-4">MENU</a>
-        </li>
-        <li>
-          <a href="#" class="accordion-icon transition duration-150 ease-in-out flex items-center mr-4">TENTANG
-            KAMI</a>
-        </li>
-      </ul>
+  <!-- navbar -->
+  <nav class=" bg-black p-4 w-full fixed top-0 z-10">
+    <div class="container flex flex-row items-center justify-between mx-auto w-full">
+      <div class="flex items-center space-x-8">
+        <img class="w-[108px] h-[40px]" src="../assets/logo-name.png" alt="Logo Image">
+        <div class="max-[300px]:hidden min-[0px]:hidden lg:block">
+          <ul class="flex space-x-4 text-[16px] font-semibold text-white font-[inter]">
+            <li><a href="#" class="cursor-pointer hover:underline">Home</a></li>
+            <li><a href="#" class="cursor-pointer hover:underline">Menu</a></li>
+            <li><a href="#" class="cursor-pointer hover:underline">Blog</a></li>
+            <li><a href="#" class="cursor-pointer hover:underline">Shop</a></li>
+            <li><a href="#" class="cursor-pointer hover:underline">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex items-center space-x-8 text-white">
+        <div class="max-[300px]:hidden min-[0px]:hidden lg:block"> 
+          <div class="w-full max-w-sm min-w-[200px]">
+            <div class="relative">
+              <input
+                class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-full pl-3 pr-28 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                placeholder="Search..." type="text"
+              />
+              <button
+                class="absolute top-1 right-1 flex items-center bg-slate-800 py-1 px-2.5 border border-transparent text-center rounded-full text-sm text-white transition-all shadow-sm hover:shadow focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mr-2">
+                  <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+                </svg>
+                Search
+              </button> 
+            </div>
+          </div>
+          
+        </div>
+        <!-- icon char button -->
+        <div class="relative">
+          <img class="h-[32px] w-[32px] " src="../assets/ic-char.png" alt="ic-char">
+        </div>
+        <!-- icon humburger button -->
+        <div class="sm:block lg:hidden flex items-center space-x-8 text-white">
+          <a class="text-4xl font-semibold" href="#">&#8801;</a>
+        </div>
+      </div>
+    </div>
     </div>
   </nav>
-  <!-- end of navbar -->
-  <section class="">
-    <div>
-      <img class="h-full w-full object-cover md:h-full md:w-full" src="../assets/coffee-1.jpg" alt="">
+  <!-- end navbar -->
+
+  <!-- main content area start here -->
+    <section class="container mx-auto px-8 py-28 bg-black grid lg:grid-cols-2 lg:gap-2">
+      <div class="flex flex-col max-[300px]:text-center min-[0px]:text-center lg:text-left">
+        <h1 class="text-[32px] font-[Great_Vibes] text-[#FF9F0D]">Welcome to Our Restaurant</h1>
+        <h2 class="text-[60px] font-[Poppins] text-white font-bold"><span class="text-[#FF9F0D]">Th</span>e Art of speed
+          food Quality</h2>
+        <p class="text-[16px] font-[Inter] text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Varius sed pharetra dictum neque massa congue</p>
+        <div>
+          <button
+          class="bg-[#FF9F0D] text-black text-[16px] w-[190px] h-[60px] font-[Inter] font-semibold py-2 px-8 rounded-full mt-4 hover:bg-[#FF9F0D] hover:text-white">See Menu</button>
+        </div>
+      </div>
+      <div class="relative max-[300px]:hidden min-[0px]:hidden lg:block">
+        <img src="../assets/bg-Image.png" alt="bg-Image" class="relative">
+      </div>
+    </section>
+
+      <!-- about us area start here -->
+   <section class="container mx-auto items-center justify-between grid lg:grid-cols-2 lg:gap-2 max-[300px]:bg ">
+    <div class="max-[300px]:hidden min-[0px]:hidden lg:block">
+      <img src="../assets/about-us.png" alt="about-us" class="w-full h-full object-cover">
     </div>
-    <div class="grid grid-rows-2 gap-8 top-0 left-0 w-full h-full md:p-[130px]">
-      <div>
-        <h1 class="font-[Italiana] text-8xl text-white">The best <span class="text-[#FAC660]">Coffee</span> in </br>
-          your
-          stunning world</h1>
-      </div>
-      <div class="grid grid-cols-2 gap-2">
-        <button class="bg-[#FAC660] text-black py-2 px-4 rounded-md">Get Cofeener</button>
-        <button class="bg-[#FAC660] text-black py-2 px-4 rounded-md">My Twitter</button>
-      </div>
+    <div class="relative flex flex-col items-start justify-center">
+      <h1 class="text-[32px] font-[Great_Vibes] text-[#FF9F0D]">About Us</h1>
+      <h2 class="text-[60px] font-[Poppins] text-white font-bold"><span class="text-[#FF9F0D]">Th</span>e Art of speed
+        food Quality</h2>
+      <p class="text-[16px] font-[Inter] text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Varius sed pharetra dictum neque massa congue</p>
+      <button
+        class="bg-[#FF9F0D] text-black text-[16px] font-[Inter] font-semibold py-2 px-8 rounded-full mt-4 hover:bg-[#FF9F0D] hover:text-white">See Menu</button>
     </div>
   </section>
-  <!-- end of hero -->
-   <div class="absolute w-[600px] h-[600px] bg-[#FAC660]">
-    <video class="aspect-video md:aspect-square ..." src="https://www.youtube.com/watch?v=RskmPTnO5QM" title="YouTube video"></video>
-   </div>
+  <!-- main content area end here -->
+
+
 </body>
+
 </html>
