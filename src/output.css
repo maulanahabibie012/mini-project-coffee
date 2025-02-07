@@ -749,6 +749,9 @@
   .m-8 {
     margin: calc(var(--spacing) * 8);
   }
+  .m-33 {
+    margin: calc(var(--spacing) * 33);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -885,9 +888,6 @@
   .h-\[40px\] {
     height: 40px;
   }
-  .h-\[50px\] {
-    height: 50px;
-  }
   .h-\[60px\] {
     height: 60px;
   }
@@ -951,14 +951,8 @@
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
-  .w-\[20px\] {
-    width: 20px;
-  }
   .w-\[32px\] {
     width: 32px;
-  }
-  .w-\[100px\] {
-    width: 100px;
   }
   .w-\[108px\] {
     width: 108px;
