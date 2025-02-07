@@ -48,7 +48,6 @@
               </button>
             </div>
           </div>
-
         </div>
         <!-- icon char button -->
         <div class="relative">
@@ -63,7 +62,7 @@
     </div>
   </nav>
   <!-- main content area start here -->
-  <section class="container mx-auto px-8 py-28 bg-black grid lg:grid-cols-2 lg:gap-2">
+  <section class="container mx-auto px-8 py-32 bg-black grid lg:grid-cols-2 lg:gap-2">
     <div class="flex flex-col max-[300px]:text-center min-[0px]:text-center lg:text-left">
       <h1 class="text-[32px] font-[Great_Vibes] text-[#FF9F0D]">Welcome to Our Restaurant</h1>
       <h2 class="text-[60px] font-[Poppins] text-white font-bold"><span class="text-[#FF9F0D]">Th</span>e Art of speed
@@ -81,30 +80,66 @@
     </div>
   </section>
   <!-- about us area end here -->
-  <section class="container mx-auto px-8 py-28 bg-black grid lg:grid-cols-2 lg:gap-2">
-    <div class="grid grid-cols-1">
-      <!-- about us image -->
-      <div class="grid grid-flow-col grid-cols-3 gap-4">
-        <img src="../assets/about-us-1.png" alt="about-us-1" class="w-[336px] h-[536px]">
-        <img src="../assets/about-us-2.png" alt="about-us-1" class="w-[336px] h-[336px]">
-        <img src="../assets/about-us-3.png" alt="about-us-1" class="w-[336px] h-[536px]">
-      </div>
-      <!-- about us content -->
-      <div class="flex flex-col max-[300px]:text-center min-[0px]:text-center lg:text-left">
-        <h1 class="text-[32px] font-[Great_Vibes] text-[#FF9F0D]">About Us</h1>
-        <h2 class="text-[60px] font-[Poppins] text-white font-bold"><span class="text-[#FF9F0D]">Fo</span>od is an
-          important part Of a balanced Diet</h2>
-        <p class="text-[16px] font-[Inter] text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Varius sed pharetra dictum neque massa congue</p>
-        <div>
-          <button
-            class="bg-[#FF9F0D] text-black text-[16px] w-[190px] h-[60px] font-[Inter] font-semibold py-2 px-8 rounded-full mt-4 hover:bg-[#FF9F0D] hover:text-white">See
-            Menu</button>
-        </div>
+  <section class="container mx-auto bg-black grid grid-cols-1 lg:grid-cols-2 lg:gap-4 content-center">
+    <!-- about us image -->
+    <div class="grid grid-cols-2 gap-4 lg:block sm:hidden">
+      <img src="../assets/about-us-all.png" alt="about-us-all">
+    </div>
+    <div class="container flex justify-items-center sm:block lg:hidden">
+      <img src="../assets/about-us-2.png" alt="about-us-2" class="">
+    </div>
+    <!-- about us content -->
+    <div class="flex flex-col mt-8 p-4 sm:text-center lg:text-left">
+      <h1 class="text-[32px] font-[Great_Vibes] text-[#FF9F0D]">About Us</h1>
+      <h2 class="text-[60px] font-[Poppins] text-white font-bold"><span class="text-[#FF9F0D]">Fo</span>od is an
+        important part Of a balanced Diet</h2>
+      <p class="text-[16px] font-[Inter] text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Varius sed pharetra dictum neque massa congue</p>
+      <div>
+        <button
+          class="bg-[#FF9F0D] text-black text-[16px] w-[190px] h-[60px] font-[Inter] font-semibold py-2 px-8 rounded-full mt-4 hover:bg-[#FF9F0D] hover:text-white">See
+          Menu</button>
       </div>
     </div>
   </section>
-  </section>
+  <div class="bg-black mt-8">
+    <div class="container mx-auto p-4">
+      <h1 class="text-[32px] font-[Poppins] text-white font-bold text-center">Food category</h1>
+      <img src="../assets/bg-fc.png" alt="bg-fc" class="absolute bottom-5% left-80% w-[300px] h-[300px]">
+    </div>
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-wrap justify-center">
+        <div class="w-full md:w-1/4 p-4">
+          <img src="../assets/category-food.png" alt="Grand Italiano" class="rounded-lg shadow-lg w-full">
+          <div class="text-center mt-2">
+            <h2 class="text-white font-bold">Grand Italiano</h2>
+            <p class="text-gray-400">26 Item</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/4 p-4">
+          <img src="../assets/category-food.png" alt="Pene Salmone" class="rounded-lg shadow-lg w-full">
+          <div class="text-center mt-2">
+            <h2 class="text-white font-bold">Pene Salmone</h2>
+            <p class="text-gray-400">23 Item</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/4 p-4">
+          <img src="../assets/category-food.png" alt="Molto Tagliatelle" class="rounded-lg shadow-lg w-full">
+          <div class="text-center mt-2">
+            <h2 class="text-white font-bold">Molto Tagliatelle</h2>
+            <p class="text-gray-400">20 Item</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
 </body>
 
 </html>
